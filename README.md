@@ -1,1 +1,1 @@
-# adsite.pro_zadanie_rekrutacyjne
+# adSite.pro - zadanie rekrutacyjne
