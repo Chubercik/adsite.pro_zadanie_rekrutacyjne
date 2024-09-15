@@ -558,6 +558,10 @@ video {
   margin: 1rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -568,6 +572,10 @@ video {
 
 .mb-40 {
   margin-bottom: 10rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .flex {
@@ -590,6 +598,18 @@ video {
   height: 5rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[144\] {
+  height: 144;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .min-w-40 {
   min-width: 10rem;
 }
@@ -600,6 +620,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -633,6 +657,16 @@ video {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -659,9 +693,23 @@ video {
   vertical-align: middle;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -683,17 +731,26 @@ video {
   color: rgb(38 38 38 / var(--tw-text-opacity));
 }
 
-.background_images {
-  background-image: url('assets/img/cars_lines.webp');
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat;
+.underline {
+  text-decoration-line: underline;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
 }
 
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: -moz-max-content !important;
+  height: max-content !important;
+  padding-bottom: 12rem !important;
+  transition-timing-function: linear !important;
 }
 
 .hover\:border-opacity-0:hover {
@@ -730,6 +787,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -740,6 +801,11 @@ video {
 
   .md\:self-center {
     align-self: center;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-20 {
@@ -755,25 +821,14 @@ video {
     padding-right: 24rem;
   }
 
-  .md\:background_images {
-    background-image: url('assets/img/cars_lines.webp');
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:background_images {
-    background-image: url('assets/img/cars_lines.webp');
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:background_images {
     background-image: url('assets/img/cars_lines.webp');
     background-size: contain;
     background-position: top right;

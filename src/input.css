@@ -2,17 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 @layer utilities {
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
     .background_images {
         background-image: url('assets/img/cars_lines.webp');
         background-size: contain;
         background-position: top right;
         background-repeat: no-repeat;
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+        height: max-content !important;
+        padding-bottom: 12rem !important;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
     }
 }

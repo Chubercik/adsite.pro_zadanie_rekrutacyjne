@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="bg-neutral-100">
   <div class="pb-40 mb-40 lg:background_images">
@@ -32,10 +34,80 @@
     </div>
   </div>
   <div>
-    <div>
-      <p>Prezentacja firmy</p>
-      <p>Zobacz naszą galerię zdjęć</p>
+    <div class="pl-10 md:pl-20 pr-20 sm:pr-44 md:pr96">
+      <p class="font-semibold text-blue-600 text-xl mb-1 md:mb-2">Prezentacja firmy</p>
+      <p class="bebas-neue-regular text-neutral-800 text-4xl md:text-5xl mb-4 sm:mb-8">Zobacz naszą galerię zdjęć</p>
     </div>
+    <div class="flex justify-start align-middle font-semibold h-20 px-6 md:px-16">
+      <button class="m-4 text-blue-600 underline underline-offset-8 text-nowrap min-w-40">Samochody osobowe</button>
+      <button class="m-4 text-neutral-800 text-nowrap min-w-40">Samochody dostawcze</button>
+    </div>
+    <div class="w-full h-[144] px-6 md:px-20">
+      <div class="swiper slide-carousel swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="h-96 flex justify-center items-center">
+              <img src="assets/img/cars_2.webp" alt="cars_2">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-96 flex justify-center items-center">
+              <img src="assets/img/cars_3.webp" alt="cars_3">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-96 flex justify-center items-center">
+              <img src="assets/img/cars_4.webp" alt="cars_4">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-96 flex justify-center items-center">
+              <img src="assets/img/cars_2.webp" alt="cars_2">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-96 flex justify-center items-center">
+              <img src="assets/img/cars_3.webp" alt="cars_3">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script>
+      var swiper = new Swiper(".slide-carousel", {
+        centeredSlides: false,
+        paginationClickable: true,
+        loop: true,
+        slideToClickedSlide: true,
+        pagination: {
+          el: ".slide-carousel .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+        1920: {
+          slidesPerView: 3,
+          spaceBetween: 90
+        },
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 60
+        },
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      }
+    });
+    </script>
+    <div class="mb-20"></div>
+  </div>
+  <div>
+    <div class="h-96 bg-neutral-800"></div>
   </div>
 </body>
 </html>
